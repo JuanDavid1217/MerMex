@@ -13,7 +13,7 @@
         display: flex;
         width: 100%;
         min-height: fit-content;
-        height: calc(100dvh - var(--header-height));
+        height: calc(100svh - var(--header-height));
         background-image: url("../assets/images/background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
