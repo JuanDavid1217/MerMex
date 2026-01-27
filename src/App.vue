@@ -132,7 +132,7 @@
 
   .appear-from-bottom {
     animation-timeline: view();
-    animation-range: entry 10% cover 25%;
+    animation-range: entry 10% cover 20%;
 
     animation-name: appearFromBottom;
     animation-timing-function: linear;
