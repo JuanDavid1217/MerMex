@@ -100,6 +100,45 @@
     }
   }
 
+  @keyframes appearFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  .appear-from-left {
+    animation-name: appearFromLeft;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+
+  @keyframes appearFromBottom {
+    from {
+      transform: translateY(3rem);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .appear-from-bottom {
+    animation-timeline: view();
+    animation-range: entry 10% cover 25%;
+
+    animation-name: appearFromBottom;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
 </style>
 
 <script>

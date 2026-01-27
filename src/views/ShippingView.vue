@@ -6,11 +6,11 @@
             :title="'Envíos seguros, rápidos y sin sorpresas'"
         >
             <template #message>
-                <p class="hero-message">Con <label>Mermex</label>, tus paquetes viajan con el respaldo de un servicio confiable y trazable. Nos adaptamos a tus necesidades con opciones flexibles de envío nacional e internacional, cuidando cada detalle para que tu carga llegue en tiempo y forma.</p>
+                <p class="hero-message appear-from-left">Con <label>Mermex</label>, tus paquetes viajan con el respaldo de un servicio confiable y trazable. Nos adaptamos a tus necesidades con opciones flexibles de envío nacional e internacional, cuidando cada detalle para que tu carga llegue en tiempo y forma.</p>
             </template>
         </HeroImageComponent>
         <section>
-            <article class="container">
+            <article class="container appear-from-bottom">
                     <ShipmentFormComponent :option="2" :isEnabled="isEnabled" @shipping="shipping"/>
             </article>
         </section>

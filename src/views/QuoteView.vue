@@ -6,16 +6,16 @@
             :title="'Cotiza fácil, decide rápido'"
         >
             <template #message>
-                <p class="hero-message">Obtén una cotización clara y transparente en minutos. En <label>Mermex</label> creemos que planear tus envíos no debería ser complicado, por eso te damos precios competitivos y opciones a la medida para que elijas lo que mejor se adapta a tu negocio.</p>
+                <p class="hero-message appear-from-left">Obtén una cotización clara y transparente en minutos. En <label>Mermex</label> creemos que planear tus envíos no debería ser complicado, por eso te damos precios competitivos y opciones a la medida para que elijas lo que mejor se adapta a tu negocio.</p>
             </template>
         </HeroImageComponent>
         <section>
-            <article class="container">
+            <article class="container appear-from-bottom">
                 <ShipmentFormComponent :option="1" :isEnabled="isEnabled" @getQuote="getQuote"/>
             </article>
         </section>
         <section>
-            <article class="container">
+            <article class="container appear-from-bottom">
                 <section class="section-3">
                     <template v-if="isEnabled">
                         Los resultados de la cotización apareceran aquí.

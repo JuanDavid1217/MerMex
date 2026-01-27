@@ -6,11 +6,11 @@
             :title="'Sigue tu envío en tiempo real'"
         >
             <template #message>
-                <p class="hero-message">Mantén el control total de tu carga con nuestro sistema de rastreo. Con <label>Mermex</label> sabes dónde está tu envío en cada momento, brindándote tranquilidad, visibilidad y confianza hasta su entrega final.</p>
+                <p class="hero-message appear-from-left">Mantén el control total de tu carga con nuestro sistema de rastreo. Con <label>Mermex</label> sabes dónde está tu envío en cada momento, brindándote tranquilidad, visibilidad y confianza hasta su entrega final.</p>
             </template>
         </HeroImageComponent>
         <section>
-            <article class="container">
+            <article class="container appear-from-bottom">
                 <div class="instruction">
                     Solo ingresa tu número de guía y da clic en el botón Rastrear.
                 </div>
@@ -18,7 +18,7 @@
             </article>
         </section>
         <section>
-            <article class="container">
+            <article class="container appear-from-bottom">
                 <section class="section-3">
                     <template v-if="isEnabled">
                         Los resultados del rastreo apareceran aquí.
