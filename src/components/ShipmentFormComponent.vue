@@ -1,6 +1,6 @@
 <template>
     <form class="shipment-form" @submit.prevent="doSometing(option)">
-        <section class="container">
+        <section class="form-container">
             <section class="origin">
                 <h2>Origen:</h2>
                 <div class="inputs">
@@ -89,7 +89,7 @@
         box-shadow: 0 0 0.5rem 0.02rem #0001;
     }
 
-    .container {
+    .form-container {
         max-width: 100%;
         display: flex;
         flex-direction: row;
@@ -138,11 +138,12 @@
         justify-content: center;
         align-items: center;
         transition: background-color .3s ease;
+        min-height: 2.2rem;
     }
 
-    .disabled {
+    /*.disabled {
         background-color: var(--color3) !important;
-    }
+    }*/
 
     .inputs {
         display: flex;
@@ -170,10 +171,11 @@
 
     .inputs div  label {
         margin-bottom: .5rem;
+        color: var(--color5)
     }
 
     h2 {
-        color: var(--color6);
+        color: var(--text-color-dark);
         margin: 0 0 2rem;
     }
 

@@ -21,12 +21,14 @@
     main h1 {
         font-size: 7.5rem;
         margin: 0;
+        color: var(--color4);
     }
 
     main p {
         font-size: x-large;
         margin: 0;
         text-align: center;
+        color: var(--color1);
     }
 
     

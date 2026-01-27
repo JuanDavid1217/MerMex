@@ -1,23 +1,29 @@
 <template>
     <main>
-        <article class="section-2">
-            <MessageComponent :title="'Realiza tu envío ahora.'" :message="'Completa el formulario, confirma tus datos y nosotros nos encargamos del resto.'" />
-        </article>
-        <article class="section-3">
-            <ShipmentFormComponent :option="2" :isEnabled="isEnabled" @shipping="shipping"/>
-        </article>
+        <HeroImageComponent
+            :src="heroImg"
+            :alt="'Hero Image de Envio.'"
+            :title="'Envíos seguros, rápidos y sin sorpresas'"
+        >
+            <template #message>
+                <p class="hero-message">Con <label>Mermex</label>, tus paquetes viajan con el respaldo de un servicio confiable y trazable. Nos adaptamos a tus necesidades con opciones flexibles de envío nacional e internacional, cuidando cada detalle para que tu carga llegue en tiempo y forma.</p>
+            </template>
+        </HeroImageComponent>
+        <section>
+            <article class="container">
+                    <ShipmentFormComponent :option="2" :isEnabled="isEnabled" @shipping="shipping"/>
+            </article>
+        </section>
     </main>
 </template>
 
-<style scoped>
-    .section-3 {
-        padding: 1rem;
-    }
-</style>
+<script setup>
+    import heroImg from "@/assets/images/hero3.jpg"
+</script>
 
 <script>
-    import MessageComponent from '@/components/MessageComponent';
     import ShipmentFormComponent from '@/components/ShipmentFormComponent';
+    import HeroImageComponent from '@/components/HeroImageComponent.vue';
 
     export default {
         name: "ShippingView",
@@ -27,8 +33,8 @@
             }
         },
         components: {
-            MessageComponent,
-            ShipmentFormComponent
+            ShipmentFormComponent,
+            HeroImageComponent
         },
         methods: {
             shipping() {

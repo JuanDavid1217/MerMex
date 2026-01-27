@@ -23,7 +23,7 @@
     .tracking form {
         display: flex;
         flex-wrap: wrap;
-        border: thin solid var(--color3);
+        border: thin solid var(--color2);
         border-radius: .5rem;
         overflow: hidden;
     }
@@ -47,11 +47,12 @@
         align-items: center;
         min-width: 6.1rem;
         font-size: inherit;
+        min-height: 3.2rem;
     }
     
-    .disabled {
+    /*.disabled {
         background-color: var(--color3) !important;
-    }
+    }*/
 
     .tracking form input {
         border: none;

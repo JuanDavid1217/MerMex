@@ -7,16 +7,15 @@
 <style>
   :root {
     /*Colors*/
-    --color1: #FFF;
-    --color2: #F3F7FD;
-    --color3: #5F91D7;
-    --color4: #2662E6;
-    --color5: #606874;
-    --color6: #010A18;
+    --color1: #FDFDFE;
+    --color2: #102131;
+    /*--color3: #E07A1F;*/
+    --color4: #FE8600;
+    --color5: #44515E;
 
     --color-filter-blur: #00000090;
     
-    --text-color-dark: var(--color5);
+    --text-color-dark: var(--color2);
     --text-color-light: var(--color1);
 
     /*Text*/
@@ -78,17 +77,29 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 768px){
-    .section-2 {
-      margin-left: 6rem;
-      margin-right: 6rem;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
 
-    .section-3 {
+  .hero-message {
+    font-size: var(--step-0);
+  }
+
+  .hero-message label {
+    color: var(--color4);
+  }
+
+  @media screen and (min-width: 768px){
+    .container {
       margin-left: 6rem;
       margin-right: 6rem;
     }
   }
+
 </style>
 
 <script>

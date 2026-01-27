@@ -18,11 +18,11 @@
         width: 1rem;
         border-radius: 50%;
         animation: spinner 1s ease-in-out infinite;
-        border: .2rem solid #2662E6;
+        border: .2rem solid var(--color4);
     }
 
     .ligth-spinner {
-        border-color: #fff;
+        border-color: var(--color1);
         border-left-color: #0005;
     }
 

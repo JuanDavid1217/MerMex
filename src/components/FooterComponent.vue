@@ -10,7 +10,7 @@
         </section>
         <section class="legal">
             <p>
-                2025 © - todos los derechos reservados.
+                © 2026 - todos los derechos reservados.
             </p>
             <button type="button" @click="this.$router.push('/terms-and-conditions')">Términos y Condiciones</button>
             <button type="button" @click="this.$router.push('/privacy-policy')">Aviso de privacidad</button>
@@ -51,6 +51,7 @@
 
     .footer p {
         font-size: smaller;
+        color: var(--color5)
     }
 
     .facebook:hover {
@@ -66,10 +67,11 @@
         background: transparent;
         color: var(--text-color-dark);
         cursor: pointer;
+        color: var(--color5);
     }
 
     .legal button:hover {
-        color: var(--color3);
+        color: var(--color4);
         text-decoration: underline;
     }
 

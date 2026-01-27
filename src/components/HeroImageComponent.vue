@@ -1,52 +1,77 @@
 <template>
     <article class="hero-image">
+        <img :src="src" :alt="alt">
         <div>
-            <h1>
-                MerMex.<br>Logística inteligente para tus importaciones y exportaciones.
-            </h1>
+            <section class="container half">
+                <MessageComponent :title="title">
+                    <template #message>
+                        <slot name="message"></slot>
+                    </template>
+                </MessageComponent>
+            </section>
         </div>
     </article>
 </template>
 
 <style scoped>
     .hero-image {
+        position: relative;
         display: flex;
         width: 100%;
         min-height: fit-content;
         height: calc(100svh - var(--header-height));
-        background-image: url("../assets/images/background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center var(--header-height);
-        background-attachment: fixed;
+    }
+
+    .hero-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
     }
 
     .hero-image div {
         display: flex;
-        justify-content: center;
         align-items: center;
         width: 100%;
         min-height: fit-content;
         height: 100%;
-        text-align: center;
         color: var(--text-color-light);
-        background-image: linear-gradient(to bottom, #5F91D790, #2662E690, #F3F7FD);
-        padding: 1rem;
+        background: linear-gradient(to bottom, #0C355650, var(--color2));
     }
 
-    .hero-image div h1 {
-        font-size: x-large;
+    @media screen and (min-width: 768px){
+        .half {
+            width: 50%;
+        }
     }
 
-    @media screen and (min-width: 768px) {
-        .hero-image div h1 {
-            font-size: 2.5rem;
-        }   
-    }
 </style>
 
 <script>
+    import MessageComponent from './MessageComponent.vue';
     export default {
-        name: "HeroImageComponent"
+        name: "HeroImageComponent",
+        props: {
+            src: {
+                type: String,
+                required: true,
+            },
+            alt: {
+                type: String,
+                required: false,
+                default: "Una imagen de MerMex."
+            },
+            title: {
+                type: String,
+                required: true
+            }
+        },
+        components: {
+            MessageComponent,
+        }
     }
 </script>

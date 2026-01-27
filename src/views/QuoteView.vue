@@ -1,47 +1,61 @@
 <template>
     <main>
-        <article class="section-2">
-            <MessageComponent :title="'¿Quieres realizar un envío con nosotros pero no sabes cuánto vas a pagar?'" :message="'Con nuestra calculadora de precios, obtén el costo exacto de tu envío en segundos.'"/>
-        </article>
-        <article class="section-3">
-            <ShipmentFormComponent :option="1" :isEnabled="isEnabled" @getQuote="getQuote"/>
-        </article>
-        <article class="section-4">
-            <template v-if="isEnabled">
-                Los resultados de la cotización apareceran aquí.
+        <HeroImageComponent
+            :src="heroImg"
+            :alt="'Hero Image de Cotización.'"
+            :title="'Cotiza fácil, decide rápido'"
+        >
+            <template #message>
+                <p class="hero-message">Obtén una cotización clara y transparente en minutos. En <label>Mermex</label> creemos que planear tus envíos no debería ser complicado, por eso te damos precios competitivos y opciones a la medida para que elijas lo que mejor se adapta a tu negocio.</p>
             </template>
-            <template v-else>
-                <SpinnerComponent :width="'3rem'"/>
-            </template>
-        </article>
+        </HeroImageComponent>
+        <section>
+            <article class="container">
+                <ShipmentFormComponent :option="1" :isEnabled="isEnabled" @getQuote="getQuote"/>
+            </article>
+        </section>
+        <section>
+            <article class="container">
+                <section class="section-3">
+                    <template v-if="isEnabled">
+                        Los resultados de la cotización apareceran aquí.
+                    </template>
+                    <template v-else>
+                        <SpinnerComponent :width="'3rem'"/>
+                    </template>
+                </section>
+            </article>
+        </section>
     </main>
 </template>
 
 <style scoped>
     .section-3 {
-        padding: 1rem;
-    }
-
-    .section-4 {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        margin: 0 0 2rem; /*Temporal*/
+        color: var(--text-color-light);
+        width: 100%;
+        padding-bottom: 2rem;
     }
+
 </style>
 
+<script setup>
+    import heroImg from "@/assets/images/hero4.jpg"
+</script>
+
 <script>
-    import MessageComponent from '@/components/MessageComponent'
     import ShipmentFormComponent from '@/components/ShipmentFormComponent';
     import SpinnerComponent from '@/components/SpinnerComponent';
+    import HeroImageComponent from '@/components/HeroImageComponent.vue';
 
     export default {
         name: "QuoteView",
         components: {
-            MessageComponent,
             ShipmentFormComponent,
-            SpinnerComponent
+            SpinnerComponent,
+            HeroImageComponent
         },
         data () {
             return {

@@ -21,12 +21,16 @@
     }
 
     .card h2{
-        color: var(--color6);
+        color: var(--text-color-dark);
         text-align: center;
     }
 
     .card:hover {
         transform: scale(1.02);
+    }
+
+    .card p {
+        color: var(--color5);
     }
 
 </style>

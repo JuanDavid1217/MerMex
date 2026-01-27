@@ -175,7 +175,7 @@
     }
 
     .subitem:nth-child(1n+2) {
-        background-color: var(--color6);
+        background-color: var(--color2);
         /*z-index: 1;*/
         color: var(--color1);
         display: none;

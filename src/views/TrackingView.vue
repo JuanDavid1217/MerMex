@@ -1,17 +1,34 @@
 <template>
     <main>
-        <article class="section-2">
-            <MessageComponent :title="'Rastrea tu envío de manera rápida y segura.'" :message="'Solo ingresa tu número de guía y da clic en el botón Rastrear.'"/>
-            <TrackingFormComponent :isEnabled="isEnabled" @tracking="tracking"/>
-        </article>
-        <article class="section-3">
-            <template v-if="isEnabled">
-                Los resultados del rastreo apareceran aquí.
+        <HeroImageComponent
+            :src="heroImg"
+            :alt="'Hero Image de Rastreo.'"
+            :title="'Sigue tu envío en tiempo real'"
+        >
+            <template #message>
+                <p class="hero-message">Mantén el control total de tu carga con nuestro sistema de rastreo. Con <label>Mermex</label> sabes dónde está tu envío en cada momento, brindándote tranquilidad, visibilidad y confianza hasta su entrega final.</p>
             </template>
-            <template v-else>
-                <SpinnerComponent :width="'3rem'"/>
-            </template>
-        </article>
+        </HeroImageComponent>
+        <section>
+            <article class="container">
+                <div class="instruction">
+                    Solo ingresa tu número de guía y da clic en el botón Rastrear.
+                </div>
+                <TrackingFormComponent :isEnabled="isEnabled" @tracking="tracking"/>
+            </article>
+        </section>
+        <section>
+            <article class="container">
+                <section class="section-3">
+                    <template v-if="isEnabled">
+                        Los resultados del rastreo apareceran aquí.
+                    </template>
+                    <template v-else>
+                        <SpinnerComponent :width="'3rem'"/>
+                    </template>
+                </section>
+            </article>
+        </section>
     </main>
 </template>
 
@@ -21,23 +38,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        margin: 6rem 0; /*Temporal*/
+        color: var(--text-color-light);
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .instruction {
+        text-align: center;
+        color: var(--text-color-light);
     }
 
 </style>
 
-<script>
-    import MessageComponent from '@/components/MessageComponent'
-    import TrackingFormComponent from '@/components/TrackingFormComponent'
-    import SpinnerComponent from '@/components/SpinnerComponent'
+<script setup>
+    import heroImg from "@/assets/images/hero2.jpg"
+</script>
 
+<script>
+    import SpinnerComponent from '@/components/SpinnerComponent'
+    import HeroImageComponent from '@/components/HeroImageComponent.vue';
+    import TrackingFormComponent from "@/components/TrackingFormComponent.vue";
+    
     export default {
         name: "TrackingView",
         components: {
-            MessageComponent,
-            TrackingFormComponent,
-            SpinnerComponent
+            SpinnerComponent,
+            HeroImageComponent,
+            TrackingFormComponent
         },
         data() {
             return {
