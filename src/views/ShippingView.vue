@@ -6,7 +6,7 @@
             :title="'Envíos seguros, rápidos y sin sorpresas'"
         >
             <template #message>
-                <p class="hero-message appear-from-left">Con <label>Mermex</label>, tus paquetes viajan con el respaldo de un servicio confiable y trazable. Nos adaptamos a tus necesidades con opciones flexibles de envío nacional e internacional, cuidando cada detalle para que tu carga llegue en tiempo y forma.</p>
+                <p class="hero-message automatic-appear-from-left">Con <label>Mermex</label>, tus paquetes viajan con el respaldo de un servicio confiable y trazable. Nos adaptamos a tus necesidades con opciones flexibles de envío nacional e internacional, cuidando cada detalle para que tu carga llegue en tiempo y forma.</p>
             </template>
         </HeroImageComponent>
         <section>
@@ -16,6 +16,12 @@
         </section>
     </main>
 </template>
+
+<style scoped>
+    section {
+        background-color: var(--color2);
+    }
+</style>
 
 <script setup>
     import heroImg from "@/assets/images/hero3.jpg"

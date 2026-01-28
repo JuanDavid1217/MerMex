@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer appear-from-bottom">
+    <footer class="footer">
         <LogoComponent/>
         <section class="social-networks">
             <h2>Contáctanos por:</h2>

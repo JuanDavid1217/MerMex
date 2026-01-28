@@ -6,7 +6,7 @@
             :title="'Cotiza fácil, decide rápido'"
         >
             <template #message>
-                <p class="hero-message appear-from-left">Obtén una cotización clara y transparente en minutos. En <label>Mermex</label> creemos que planear tus envíos no debería ser complicado, por eso te damos precios competitivos y opciones a la medida para que elijas lo que mejor se adapta a tu negocio.</p>
+                <p class="hero-message automatic-appear-from-left">Obtén una cotización clara y transparente en minutos. En <label>Mermex</label> creemos que planear tus envíos no debería ser complicado, por eso te damos precios competitivos y opciones a la medida para que elijas lo que mejor se adapta a tu negocio.</p>
             </template>
         </HeroImageComponent>
         <section>
@@ -37,6 +37,10 @@
         color: var(--text-color-light);
         width: 100%;
         padding-bottom: 2rem;
+    }
+
+    section {
+        background-color: var(--color2);
     }
 
 </style>

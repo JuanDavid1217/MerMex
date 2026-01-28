@@ -6,7 +6,7 @@
             :title="'Sigue tu envío en tiempo real'"
         >
             <template #message>
-                <p class="hero-message appear-from-left">Mantén el control total de tu carga con nuestro sistema de rastreo. Con <label>Mermex</label> sabes dónde está tu envío en cada momento, brindándote tranquilidad, visibilidad y confianza hasta su entrega final.</p>
+                <p class="hero-message automatic-appear-from-left">Mantén el control total de tu carga con nuestro sistema de rastreo. Con <label>Mermex</label> sabes dónde está tu envío en cada momento, brindándote tranquilidad, visibilidad y confianza hasta su entrega final.</p>
             </template>
         </HeroImageComponent>
         <section>
@@ -46,6 +46,10 @@
     .instruction {
         text-align: center;
         color: var(--text-color-light);
+    }
+
+    section {
+        background-color: var(--color2);
     }
 
 </style>

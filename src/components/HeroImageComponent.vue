@@ -43,12 +43,6 @@
         background: linear-gradient(to bottom, #0C355650, var(--color2));
     }
 
-    @media screen and (min-width: 768px){
-        .half {
-            width: 50%;
-        }
-    }
-
 </style>
 
 <script>

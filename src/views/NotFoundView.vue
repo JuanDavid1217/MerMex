@@ -16,6 +16,7 @@
         align-items: center;
         flex-direction: column;
         padding: 1rem;
+        background-color: var(--color2);
     }
 
     main h1 {

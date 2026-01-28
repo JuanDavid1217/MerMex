@@ -1,7 +1,7 @@
 <template>
     <section class="message">
         <div class="message-container">
-            <h1 class="appear-from-left">{{title}}</h1>
+            <h1 class="automatic-appear-from-left">{{title}}</h1>
             <slot name="message"></slot>
         </div>
     </section>

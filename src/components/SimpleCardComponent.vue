@@ -1,36 +1,33 @@
 <template>
-    <article class="card">
-        <h2>{{title}}</h2>
-        <p  v-for="(paragraph, index) in paragraphs" :key="index">
-            {{paragraph}}
-        </p>
-    </article>
+    <div class="introducction appear-from-bottom half">
+        <h2 :class="{'background-light': background==2}">{{ sectionName }}</h2>
+        <h3 :class="['background-dark', {'background-light': background==1}]">{{ title }}</h3>
+        <p :class="['background-dark', {'background-light-p': background==1}]">{{ content }}</p>
+    </div>
 </template>
 
 <style scoped>
-    .card {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        border-radius: 1rem;
-        padding: 1rem;
-        box-shadow: 0 0 0.5rem 0.02rem #0001;
-        background-color: var(--color1);
-        text-align: justify;
-        transition: transform .3s ease;
+    .introducction h2 {
+        color: var(--color4);
+        font-weight: 300;
+        font-size: var(--step--1);
     }
 
-    .card h2{
-        color: var(--text-color-dark);
-        text-align: center;
+    .introducction h3 {
+        margin: 0;
+        font-size: var(--step-3);
     }
 
-    .card:hover {
-        transform: scale(1.02);
+    .background-dark {
+        color: var(--text-color-light);
     }
 
-    .card p {
+    .background-light-p {
         color: var(--color5);
+    }
+
+    .background-light {
+        color: var(--text-color-dark) !important;
     }
 
 </style>
@@ -39,13 +36,22 @@
     export default {
         name: "SimpleCardComponent",
         props: {
+            sectionName: {
+                type: String,
+                required: true
+            },
             title: {
                 type: String,
                 required: true
             },
-            paragraphs: {
-                type: Array,
+            content: {
+                type: String,
                 required: true
+            },
+            background: {
+                type: Number,
+                required: false,
+                default: 0
             }
         }
     }

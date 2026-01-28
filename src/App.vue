@@ -54,7 +54,7 @@
     margin: 0;
     padding: 0;
     min-width: 13rem;
-    background-color: var(--color2);
+    background-color: var(--color1);
   }
 
   #app {
@@ -81,8 +81,9 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
-    margin: 1rem auto;
+    padding: 2rem 1rem;
+    justify-content: center;
+    /*margin: 1rem auto;*/
   }
 
   .hero-message {
@@ -98,6 +99,10 @@
       margin-left: 6rem;
       margin-right: 6rem;
     }
+
+    .half {
+      width: 50%;
+    }
   }
 
   @keyframes appearFromLeft {
@@ -111,7 +116,7 @@
     }
   }
 
-  .appear-from-left {
+  .automatic-appear-from-left {
     animation-name: appearFromLeft;
     animation-duration: .8s;
     animation-timing-function: ease-out;
@@ -132,12 +137,36 @@
 
   .appear-from-bottom {
     animation-timeline: view();
-    animation-range: entry 10% cover 20%;
+    animation-range: entry 10% cover 25%;
 
     animation-name: appearFromBottom;
     animation-timing-function: linear;
     animation-fill-mode: both;
   }
+
+  @keyframes appearFromCenter {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes appearFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
 
 </style>
 
