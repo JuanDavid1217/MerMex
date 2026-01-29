@@ -94,14 +94,16 @@
     color: var(--color4);
   }
 
+  @media screen and (min-width: 576px) {
+    .half {
+      width: 50%;
+    }
+  }
+
   @media screen and (min-width: 768px){
     .container {
       margin-left: 6rem;
       margin-right: 6rem;
-    }
-
-    .half {
-      width: 50%;
     }
   }
 

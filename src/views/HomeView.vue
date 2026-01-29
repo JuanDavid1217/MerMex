@@ -78,12 +78,12 @@
         animation-timeline: view();
         animation-range: entry 10% cover 25%;
 
-        animation-name: appearFromCenter;
+        animation-name: appearFromBottom;
         animation-timing-function: linear;
         animation-fill-mode: both;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 576px) {
         .container {
             flex-direction: row;
             align-items: center;
