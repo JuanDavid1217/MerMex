@@ -11,6 +11,7 @@
         color: var(--color4);
         font-weight: 300;
         font-size: var(--step--1);
+        text-transform: uppercase;
     }
 
     .introducction h3 {

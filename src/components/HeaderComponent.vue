@@ -14,7 +14,7 @@
         position: sticky;
         top: 0;
         transition: box-shadow 0.3s linear;
-        z-index: 1;
+        z-index: 2;
         height: var(--header-height);
     }
 
