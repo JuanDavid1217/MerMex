@@ -36,8 +36,8 @@
     --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
 
     /*General*/
-    --logo-size: 4rem;
-    --padding-x: 2rem;
+    --logo-size: 3.5rem;
+    --padding-x: 1rem;
     --padding-y: 0.5rem;
     --general-padding: 1rem;
     --header-height: calc(var(--logo-size) + (var(--padding-y) * 2));
@@ -107,9 +107,14 @@
   }
 
   @media screen and (min-width: 768px){
+    :root {
+      --padding-x: 6rem;
+    }
+
     .container {
       margin-left: 6rem;
       margin-right: 6rem;
+      padding: 2rem 0;
     }
   }
 
