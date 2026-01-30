@@ -6,12 +6,18 @@
 
 <style>
   :root {
+
     /*Colors*/
+    /*
     --color1: #FDFDFE;
     --color2: #102131;
-    /*--color3: #E07A1F;*/
     --color4: #FE8600;
     --color5: #44515E;
+    */
+    --color1: #FDFDFE;
+    --color2: #1D1C1C;
+    --color4: #FBA019;
+    --color5: #5A5856;
 
     --color-filter-blur: #00000090;
     
@@ -30,7 +36,7 @@
     --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
 
     /*General*/
-    --logo-size: 3rem;
+    --logo-size: 4rem;
     --padding-x: 2rem;
     --padding-y: 0.5rem;
     --general-padding: 1rem;
@@ -53,7 +59,7 @@
   body {
     margin: 0;
     padding: 0;
-    min-width: 13rem;
+    min-width: 16rem;
     background-color: var(--color1);
   }
 

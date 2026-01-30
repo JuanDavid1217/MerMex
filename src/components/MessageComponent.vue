@@ -24,12 +24,18 @@
     }
 
     .message-container h1 {
-        font-size: var(--step-5);
+        font-size: var(--step-4);
     }
 
     /*.message-container p {
         font-size: var(--step-0);
     }*/
+
+    @media screen and (min-width: 280px) {
+        .message-container h1 {
+            font-size: var(--step-5);
+        }
+    }
 </style>
 
 <script>
