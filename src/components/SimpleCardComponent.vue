@@ -19,6 +19,10 @@
         font-size: var(--step-3);
     }
 
+    .introducction p {
+        white-space: pre-line;
+    }
+
     .background-dark {
         color: var(--text-color-light);
     }

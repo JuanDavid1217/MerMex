@@ -94,6 +94,7 @@
 
   .hero-message {
     font-size: var(--step-0);
+    white-space: pre-line;
   }
 
   .hero-message label {

@@ -83,6 +83,7 @@
 
     .card .content {
         flex-grow: 1;
+        white-space: pre-line;
     }
 
     .card .buttons button {

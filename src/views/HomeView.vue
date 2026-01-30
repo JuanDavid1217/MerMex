@@ -13,8 +13,10 @@
             <article class="container container-flex">
                 <SimpleCardComponent
                     :sectionName="'¿Quiénes somos?'"
-                    :title="'Conectamos tu carga con confianza y experiencia'"
-                    :content="'Somos un equipo especializado en soluciones logísticas que entiende la importancia de cada envío. Trabajamos con procesos eficientes, tecnología y un enfoque humano para garantizar que tu mercancía llegue segura, a tiempo y sin complicaciones, conectando a México con mercados nacionales e internacionales.'"
+                    :title="'Mer Mex Express'"
+                    :content="`Empresa líder en logística con más de 10 años de experiencia en el transporte de mercancías a nivel nacional e internacional. Nos especializamos en ofrecer soluciones logísticas integrales y personalizadas, adaptadas a las necesidades específicas de cada cliente.
+                    
+                    Nuestra misión es garantizar envíos seguros, eficientes y puntuales, conectando México con Estados Unidos, Canadá y China. Gestionamos cada operación con altos estándares de calidad, desde el envío de un sobre hasta el traslado de un contenedor completo, respaldados por un equipo experto y procesos confiables.`"
                 />
                 <div class="image-container appear">
                     <img src="../assets/images/hero4.jpg" alt="">
