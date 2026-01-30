@@ -23,6 +23,12 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        box-shadow: .3rem .3rem .5rem .02rem var(--color2);
+        transition: transform .3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-.3rem);
     }
 
     .card .image {

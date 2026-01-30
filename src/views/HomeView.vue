@@ -86,6 +86,7 @@
     .image-container {
         width: 100%;
         height: auto;
+        max-height: 58.5rem;
         object-fit: cover;
         object-position: center;
         display: flex;

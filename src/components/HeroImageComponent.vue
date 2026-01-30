@@ -20,6 +20,7 @@
         width: 100%;
         min-height: fit-content;
         height: calc(100svh - var(--header-height));
+        max-height: 62.5rem;
     }
 
     .hero-image img {
