@@ -22,6 +22,28 @@
                     <img src="../assets/images/hero4.jpg" alt="">
                 </div>
             </article>
+            <article class="container container-grid">
+                <ItemComponent
+                    :iconName="'bi bi-globe'"
+                    :title="'Expertos en logística.'"
+                    :description="'Nuestro equipo cuenta con más de 15 años de experiencia en operaciones logísticas nacionales e internacionales, aportando conocimiento estratégico, dominio de rutas y cumplimiento normativo para asegurar envíos eficientes y bien coordinados.'"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-file-earmark-text'"
+                    :title="'Gestión aduanal sin complicaciones.'"
+                    :description="'Disponemos de personal especializado en procesos aduanales y gestión documental, garantizando el correcto cumplimiento de las regulaciones vigentes y facilitando el despacho oportuno de la mercancía sin contratiempos.'"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-airplane'"
+                    :title="'Agentes de carga certificados.'"
+                    :description="'Trabajamos con agentes de carga certificados que respaldan la seguridad y confiabilidad de cada operación, asegurando el manejo adecuado de la mercancía y una coordinación eficiente en cada etapa del proceso logístico.'"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-headset'"
+                    :title="'Soporte técnico disponible 24/7.'"
+                    :description="'Nuestro equipo de soporte técnico está disponible las 24 horas, los 7 días de la semana, para brindar atención inmediata, seguimiento continuo y respuesta oportuna ante cualquier requerimiento o incidencia.'"
+                />
+            </article>
         </section>
         <section class="section">
             <article class="container container-flex">
@@ -152,13 +174,15 @@
     import HeroImageComponent from "@/components/HeroImageComponent";
     import SimpleCardComponent from "@/components/SimpleCardComponent";
     import ImageCardComponent from '@/components/ImageCardComponent.vue';
+    import ItemComponent from '@/components/ItemComponent.vue';
 
     export default {
         name: "HomeView",
         components: {
             HeroImageComponent,
             SimpleCardComponent,
-            ImageCardComponent
+            ImageCardComponent,
+            ItemComponent
         }
     }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card appear-from-center">
         <section class="image">
             <div class="p">
                 <h2>{{ title }}</h2>
@@ -24,11 +24,11 @@
         display: flex;
         flex-direction: column;
         box-shadow: .3rem .3rem .5rem .02rem var(--color2);
-        transition: transform .3s ease;
+        transition: translate .3s ease;
     }
 
     .card:hover {
-        transform: translateY(-.3rem);
+        translate: 0 -.3rem;
     }
 
     .card .image {

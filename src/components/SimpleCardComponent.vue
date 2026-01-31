@@ -2,7 +2,7 @@
     <div class="introducction appear-from-bottom half">
         <h2 :class="{'background-light': background==2}">{{ sectionName }}</h2>
         <h3 :class="['background-dark', {'background-light': background==1}]">{{ title }}</h3>
-        <p :class="['background-dark', {'background-light-p': background==1}]">{{ content }}</p>
+        <p :class="['background-dark-p', {'background-light-p': background==1}]">{{ content }}</p>
     </div>
 </template>
 
@@ -25,6 +25,10 @@
 
     .background-dark {
         color: var(--text-color-light);
+    }
+
+    .background-dark-p {
+        color: var(--color3);
     }
 
     .background-light-p {

@@ -16,6 +16,7 @@
     */
     --color1: #FDFDFE;
     --color2: #1D1C1C;
+    --color3: #C3C1BB;
     --color4: #FBA019;
     --color5: #5A5856;
 
@@ -168,6 +169,15 @@
       transform: scale(1);
       opacity: 1;
     }
+  }
+
+  .appear-from-center {
+    animation-timeline: view();
+    animation-range: entry 10% cover 25%;
+
+    animation-name: appearFromCenter;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
   }
 
   @keyframes appearFromRight {
