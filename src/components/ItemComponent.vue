@@ -2,9 +2,9 @@
     <div class="item appear-from-center">
         <section class="item-ico">
             <i :class="iconName"></i>
-            <h3>{{ title }}</h3>
+            <h3 :class="{'background-light-h3': backgroundLight}">{{ title }}</h3>
         </section>
-        <p>{{ description }}</p>
+        <p :class="{'background-light-p': backgroundLight}">{{ description }}</p>
     </div>
 </template>
 
@@ -34,6 +34,15 @@
     .item p {
         color: var(--color3);
     }
+
+    .background-light-p {
+        color: var(--color5) !important;
+    }
+
+    .background-light-h3 {
+        color: var(--text-color-dark) !important;
+    }
+
 </style>
 
 <script>
@@ -51,6 +60,11 @@
             description: {
                 type: String,
                 required: true
+            },
+            backgroundLight: {
+                type: Boolean,
+                required: false,
+                default: false
             }
         }
     }

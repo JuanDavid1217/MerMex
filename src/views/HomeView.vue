@@ -43,6 +43,26 @@
                     :title="'Soporte técnico disponible 24/7.'"
                     :description="'Nuestro equipo de soporte técnico está disponible las 24 horas, los 7 días de la semana, para brindar atención inmediata, seguimiento continuo y respuesta oportuna ante cualquier requerimiento o incidencia.'"
                 />
+                <ItemComponent
+                    :iconName="'bi bi-award'"
+                    :title="'Más de 10 años de experiencia.'"
+                    :description="'Una trayectoria sólida en el mercado respalda nuestro conocimiento, permitiéndonos ofrecer soluciones logísticas confiables, eficientes y adaptadas a las necesidades de cada operación.'"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-people'"
+                    :title="'Más de 1,000 clientes satisfechos.'"
+                    :description="'La confianza de nuestros clientes es el reflejo de un servicio consistente, atención personalizada y un compromiso constante con la calidad en cada envío.'"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-box-seam'"
+                    :title="'Más de 10,000 envíos exitosos.'"
+                    :description="'Miles de operaciones completadas con éxito avalan nuestra capacidad operativa, el control de procesos y la seguridad en el manejo de mercancías a nivel nacional e internacional.'"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-shield-check'"
+                    :title="'Certificaciones y cumplimiento.'"
+                    :description="'Contamos con certificaciones reconocidas como ISO 9001, ISO 14001 y OEA, que garantizan altos estándares de calidad, gestión ambiental y cumplimiento normativo en cada proceso logístico.'"
+                />
             </article>
         </section>
         <section class="section">
@@ -56,6 +76,50 @@
                 <div class="image-container appear">
                     <img src="../assets/images/hero3.jpg" alt="">
                 </div>
+            </article>
+            <article class="container container-grid">
+                <ItemComponent
+                    :iconName="'bi bi-globe'"
+                    :title="'Envíos internacionales de mercancía.'"
+                    :description="'Realizamos el envío de mercancías, productos, accesorios, artículos, productos monofacturados, ensamblados y comestibles, con cobertura en México, Estados Unidos, Canadá y China, garantizando un manejo seguro y conforme a la normativa de cada destino.'"
+                    :backgroundLight="true"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-arrow-left-right'"
+                    :title="'Importación y exportación.'"
+                    :description="'Ofrecemos servicios integrales de importación y exportación de mercancías, asegurando procesos eficientes, cumplimiento regulatorio y una correcta coordinación logística para operaciones nacionales e internacionales.'"
+                    :backgroundLight="true"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-boxes'"
+                    :title="'Logística de almacenamiento y distribución.'"
+                    :description="'Brindamos soluciones de almacenamiento y distribución que optimizan la gestión de inventarios y la entrega oportuna de mercancías, adaptándonos a las necesidades operativas de cada cliente.'"
+                    :backgroundLight="true"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-file-check'"
+                    :title="'Gestión de aduanas y trámites.'"
+                    :description="'Nos encargamos de la gestión aduanera y de todos los trámites necesarios para el despacho de mercancías, facilitando procesos ágiles, seguros y alineados con la legislación vigente.'"
+                    :backgroundLight="true"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-shield-check'"
+                    :title="'Seguros de carga.'"
+                    :description="'Protegemos tu mercancía mediante seguros de carga que brindan respaldo ante cualquier eventualidad durante el traslado, ofreciendo tranquilidad y seguridad en cada operación logística.'"
+                    :backgroundLight="true"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-geo-alt'"
+                    :title="'Seguimiento en tiempo real de envíos.'"
+                    :description="'Proporcionamos seguimiento en tiempo real de los envíos, permitiendo monitorear el estado y ubicación de la mercancía en cada etapa del proceso para una mayor transparencia y control.'"
+                    :backgroundLight="true"
+                />
+                <ItemComponent
+                    :iconName="'bi bi-list-check'"
+                    :title="'Trámites y gestiones logísticas.'"
+                    :description="'Realizamos trámites y gestiones logísticas complementarias que agilizan las operaciones, reducen tiempos administrativos y garantizan una correcta ejecución de cada envío.'"
+                    :backgroundLight="true"
+                />
             </article>
             <article class="container container-grid">
                 <ImageCardComponent
