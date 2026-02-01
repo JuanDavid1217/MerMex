@@ -2,11 +2,11 @@
     <footer class="footer">
         <LogoComponent/>
         <section class="social-networks">
-            <h2>Contáctanos por:</h2>
+            <h2>Síguenos en:</h2>
             <nav>
                 <a title="Facebook" class="social-network-icon" href="https://www.facebook.com/Mermexmexico/" target="_blanck"><i class="bi bi-facebook"></i></a>
-                <a title="WhatsApp" class="social-network-icon" href="https://www.instagram.com/mercado_mexico5/" target="_blanck"><i class="bi bi-instagram"></i></a>
-                <a title="WhatsApp" class="social-network-icon" href="https://www.tiktok.com/@mercadomexico" target="_blanck"><i class="bi bi-tiktok"></i></a>
+                <a title="Instagram" class="social-network-icon" href="https://www.instagram.com/mercado_mexico5/" target="_blanck"><i class="bi bi-instagram"></i></a>
+                <a title="Tiktok" class="social-network-icon" href="https://www.tiktok.com/@mercadomexico" target="_blanck"><i class="bi bi-tiktok"></i></a>
             </nav>
         </section>
         <section class="legal">
