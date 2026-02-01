@@ -60,7 +60,6 @@
     }
 
     .card .image div h3,
-    .card .content,
     .card .buttons button{
         color: var(--text-color-light);
     }
@@ -84,6 +83,7 @@
     .card .content {
         flex-grow: 1;
         white-space: pre-line;
+        color: var(--color3);
     }
 
     .card .buttons button {

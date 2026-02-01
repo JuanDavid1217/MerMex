@@ -153,7 +153,7 @@
                 <label class="appear-from-bottom">Envía y</label>
                 <label class="appear-from-bottom">recibe desde:</label>
                 <br><br>
-                <div class="container-grid">
+                <section class="container-grid">
                     <FlagItemComponent
                         :url="'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/512px-Flag_of_Mexico.svg.png?20250615041459'"
                         :alt="'Imagen de la bandera de México.'"
@@ -178,13 +178,15 @@
                         :title="'China'"
                         :description="'Cobertura en todas las provincias.'"
                     />
-                </div>
+                </section>
+                <br><br>
+                <ShippingTimesComponent/>
             </article>
         </section>
         <section class="section">
             <article class="container container-flex">
                 <SimpleCardComponent
-                    :sectionName="'Contactanos'"
+                    :sectionName="'Contáctanos'"
                     :title="'Estamos listos para mover tu próximo envío'"
                     :content="'Nuestro equipo está disponible para asesorarte y resolver cualquier duda sobre tus envíos. Escríbenos, llámanos o solicita una cotización y recibe atención rápida, clara y personalizada para comenzar a mover tu mercancía con total confianza.'"
                 />
@@ -192,6 +194,28 @@
                     <img src="../assets/images/hero2.jpg" alt="">
                 </div>
             </article>
+            <section class="container schedule-flex">
+                <ContactFormComponent/>
+                <section class="schedule-grid">
+                    <article class="schedule-section ss-1 appear-from-bottom">
+                        <h2>Horarios de atención:</h2>
+                        <p>Lunes a viernes de 09:00 am - 06:00 pm (CST)</p>
+                        <p>Sábados a partir de las 02:00 pm (CST)</p>
+                        <p>Domingos sólo proyectos especiales de 10:00 am - 01:00 pm (CST)</p>
+                    </article>
+                    <article class="schedule-section ss-2 appear-from-bottom">
+                        <h2>Teléfonos:</h2>
+                        <p>+52 271 185 1158</p>
+                        <p>+52 271 212 6601</p>
+                        <br>
+                    </article>
+                    <article class="schedule-section ss-3 appear-from-bottom">
+                        <h2>Dirección:</h2>
+                        <p>Av.  Zaragoza</p>
+                        <p>Monte Blanco, Ver., México</p>
+                    </article>
+                </section>
+            </section>
         </section>
     </main>
 </template>
@@ -314,6 +338,52 @@
         }
     }
 
+    .schedule-section h2 {
+        color: var(--text-color-light)
+    }
+
+    .schedule-section p {
+        color: var(--color3);
+    }
+
+    .ss-1 {
+        grid-area: ss-1;
+    }
+    
+    .ss-2 {
+        grid-area: ss-2;
+    }
+
+    .ss-3 {
+        grid-area: ss-3;
+    }
+
+    .schedule-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "ss-1    ss-1"
+        "ss-2    ss-3";
+        gap: 1rem;
+        order: 1;
+    }
+
+    @media screen and (min-width: 992px) {
+        .schedule-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .schedule-grid {
+            width: 40%;
+            order: 2;
+        }
+    }
+
 </style>
 
 <script setup>
@@ -329,7 +399,9 @@
     import ImageCardComponent from '@/components/ImageCardComponent.vue';
     import ItemComponent from '@/components/ItemComponent.vue';
     import FlagItemComponent from '@/components/FlagItemComponent.vue';
-
+    import ShippingTimesComponent from '@/components/ShippingTimesComponent.vue';
+    import ContactFormComponent from '@/components/ContactFormComponent.vue';
+    
     export default {
         name: "HomeView",
         components: {
@@ -337,7 +409,9 @@
             SimpleCardComponent,
             ImageCardComponent,
             ItemComponent,
-            FlagItemComponent
+            FlagItemComponent,
+            ShippingTimesComponent,
+            ContactFormComponent
         }
     }
 </script>

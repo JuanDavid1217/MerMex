@@ -4,8 +4,9 @@
         <section class="social-networks">
             <h2>Contáctanos por:</h2>
             <nav>
-                <a title="Facebook" class="facebook" href="https://www.facebook.com/Mermexmexico/" target="_blanck"><i class="bi bi-facebook"></i></a>
-                <a title="WhatsApp" class="whatsapp" href="https://wa.me/522712126601" target="_blanck"><i class="bi bi-whatsapp"></i></a>
+                <a title="Facebook" class="social-network-icon" href="https://www.facebook.com/Mermexmexico/" target="_blanck"><i class="bi bi-facebook"></i></a>
+                <a title="WhatsApp" class="social-network-icon" href="https://www.instagram.com/mercado_mexico5/" target="_blanck"><i class="bi bi-instagram"></i></a>
+                <a title="WhatsApp" class="social-network-icon" href="https://www.tiktok.com/@mercadomexico" target="_blanck"><i class="bi bi-tiktok"></i></a>
             </nav>
         </section>
         <section class="legal">
@@ -54,13 +55,7 @@
         color: var(--color5)
     }
 
-    .facebook:hover {
-        /*color: #1877F2;*/
-        color: var(--color4);
-    }
-
-    .whatsapp:hover {
-        /*color: #25D366;*/
+    .social-network-icon:hover {
         color: var(--color4);
     }
 
