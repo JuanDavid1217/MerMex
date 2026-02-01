@@ -64,6 +64,14 @@
                     :description="'Contamos con certificaciones reconocidas como ISO 9001, ISO 14001 y OEA, que garantizan altos estándares de calidad, gestión ambiental y cumplimiento normativo en cada proceso logístico.'"
                 />
             </article>
+            <article class="extension">
+                <label class="appear-from-bottom">Fácil de enviar,</label>
+                <label class="appear-from-bottom">sencillo de recibir.</label>
+                <section class="controls appear-from-bottom">
+                    <button @click="$router.push('/get-a-quote')">Cotizar</button>
+                    <button @click="$router.push('/shipping')">Envíar</button>
+                </section>
+            </article>
         </section>
         <section class="section">
             <article class="container container-flex">
@@ -141,6 +149,37 @@
                     :content="'La mejor opción para grandes volúmenes y cargas pesadas. El transporte marítimo ofrece una solución rentable y confiable para operaciones internacionales, conectando puertos clave y asegurando una logística sólida a largo plazo.'"
                 />
             </article>
+            <article class="extension">
+                <label class="appear-from-bottom">Envía y</label>
+                <label class="appear-from-bottom">recibe desde:</label>
+                <br><br>
+                <div class="container-grid">
+                    <FlagItemComponent
+                        :url="'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/512px-Flag_of_Mexico.svg.png?20250615041459'"
+                        :alt="'Imagen de la bandera de México.'"
+                        :title="'México'"
+                        :description="'Cobertura Nacional.'"
+                    />
+                    <FlagItemComponent
+                        :url="'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/512px-Flag_of_the_United_States.svg.png?20240524035322'"
+                        :alt="'Imagen de la bandera de los Estados Unidos de America.'"
+                        :title="'Estados Unidos'"
+                        :description="'Cobertura en todos los estados.'"
+                    />
+                    <FlagItemComponent
+                        :url="'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/512px-Flag_of_Canada_%28Pantone%29.svg.png?20210109071733'"
+                        :alt="'Imagen de la bandera de Canadá.'"
+                        :title="'Canadá'"
+                        :description="'Cobertura en todas las provincias.'"
+                    />
+                    <FlagItemComponent
+                        :url="'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/512px-Flag_of_the_People%27s_Republic_of_China.svg.png?20250417144606'"
+                        :alt="'Imagen de la bandera de China.'"
+                        :title="'China'"
+                        :description="'Cobertura en todas las provincias.'"
+                    />
+                </div>
+            </article>
         </section>
         <section class="section">
             <article class="container container-flex">
@@ -195,7 +234,7 @@
     .container-grid{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(14.75rem, 1fr));
-        grid-template-rows: auto;
+        gap: 1rem;
     }
 
     @media screen and (min-width: 576px) {
@@ -225,6 +264,56 @@
         }
     }
 
+    .extension {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color4);
+        color: var(--text-color-light);
+        padding: 2rem 1rem 3rem;
+    }
+
+    .extension label {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: var(--step-5);
+    }
+
+    .extension .controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    .extension .controls button {
+        font-size: var(--step-1);
+        font-family: inherit;
+        font-weight: bold;
+        padding: .5rem .8rem;
+        border: thick solid var(--color1);
+        cursor: pointer;
+        border-radius: .5rem;
+    }
+
+    .extension .controls button:first-child {
+        color: var(--text-color-light);
+        background-color: transparent;
+    }
+
+    .extension .controls button:last-child {
+        color: var(--color4);
+        background-color: var(--color1);
+    }
+
+    @media screen and (min-width: 768px){
+        .extension {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+    }
+
 </style>
 
 <script setup>
@@ -239,6 +328,7 @@
     import SimpleCardComponent from "@/components/SimpleCardComponent";
     import ImageCardComponent from '@/components/ImageCardComponent.vue';
     import ItemComponent from '@/components/ItemComponent.vue';
+    import FlagItemComponent from '@/components/FlagItemComponent.vue';
 
     export default {
         name: "HomeView",
@@ -246,7 +336,8 @@
             HeroImageComponent,
             SimpleCardComponent,
             ImageCardComponent,
-            ItemComponent
+            ItemComponent,
+            FlagItemComponent
         }
     }
 </script>

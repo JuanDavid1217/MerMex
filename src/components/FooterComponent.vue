@@ -55,11 +55,13 @@
     }
 
     .facebook:hover {
-        color: #1877F2;
+        /*color: #1877F2;*/
+        color: var(--color4);
     }
 
     .whatsapp:hover {
-        color: #25D366;
+        /*color: #25D366;*/
+        color: var(--color4);
     }
 
     .legal button {
