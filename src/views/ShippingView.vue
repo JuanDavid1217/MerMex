@@ -24,7 +24,7 @@
 </style>
 
 <script setup>
-    import heroImg from "@/assets/images/hero3.jpg"
+    import heroImg from "@/assets/images/hero3.webp"
 </script>
 
 <script>

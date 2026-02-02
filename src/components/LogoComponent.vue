@@ -1,6 +1,6 @@
 <template>
     <section class="logo">
-        <img src="../assets/images/logo.png" alt="MerMex Logo">
+        <img src="../assets/images/logo.webp" alt="MerMex Logo">
     </section>
 </template>
 

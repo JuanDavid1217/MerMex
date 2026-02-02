@@ -19,7 +19,7 @@
                     Nuestra misión es garantizar envíos seguros, eficientes y puntuales, conectando México con Estados Unidos, Canadá y China. Gestionamos cada operación con altos estándares de calidad, desde el envío de un sobre hasta el traslado de un contenedor completo, respaldados por un equipo experto y procesos confiables.`"
                 />
                 <div class="image-container appear">
-                    <img src="../assets/images/hero4.jpg" alt="">
+                    <img src="../assets/images/hero4.webp" alt="">
                 </div>
             </article>
             <article class="container container-grid">
@@ -86,7 +86,7 @@
                     :background="1"
                 />
                 <div class="image-container appear">
-                    <img src="../assets/images/hero3.jpg" alt="">
+                    <img src="../assets/images/hero3.webp" alt="">
                 </div>
             </article>
             <article class="container container-grid">
@@ -199,7 +199,7 @@
                     :content="'Nuestro equipo está disponible para asesorarte y resolver cualquier duda sobre tus envíos. Escríbenos, llámanos o solicita una cotización y recibe atención rápida, clara y personalizada para comenzar a mover tu mercancía con total confianza.'"
                 />
                 <div class="image-container appear">
-                    <img src="../assets/images/hero2.jpg" alt="">
+                    <img src="../assets/images/hero2.webp" alt="">
                 </div>
             </article>
             <section class="container schedule-flex">
@@ -394,10 +394,10 @@
 </style>
 
 <script setup>
-    import heroImg from '@/assets/images/hero.jpg'
-    import card1Img from '@/assets/images/hero4.jpg'
-    import card2Img from '@/assets/images/hero3.jpg'
-    import card3Img from '@/assets/images/hero2.jpg'
+    import heroImg from '@/assets/images/hero.webp'
+    import card1Img from '@/assets/images/hero4.webp'
+    import card2Img from '@/assets/images/hero3.webp'
+    import card3Img from '@/assets/images/hero2.webp'
 </script>
 
 <script>
